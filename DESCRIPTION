@@ -46,6 +46,7 @@ Imports:
     magrittr,
     MortalityLaws (>= 1.7.0),
     Rdpack,
+    Rcpp,
     rlang,
     tibble,
     ungroup (>= 1.4.2),
