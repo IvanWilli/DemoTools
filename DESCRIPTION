@@ -1,7 +1,7 @@
 Package: DemoTools
 Type: Package
 Title: Standardize, Evaluate, and Adjust Demographic Data
-Version: 01.13.87
+Version: 01.13.87.1010
 Date: 2026-01-03
 Authors@R: c(
    person("Tim", "Riffe", role = c("aut", "cre"), 
@@ -18,7 +18,7 @@ Authors@R: c(
    person("Juan", "Galeano", role = "ctb", comment = c(ORCID = "0000-0002-3682-1797")),
    person("Derek", "Burk", role = "ctb"),
    person("Greg", "Freedman Ellis", role = "ctb"))
-Description: A collection of classic demographic methods used to evaluate, adjust, and standardize demographic data.
+Description: Modified version of DemoTools (no RC function and dependencies)
 License: file LICENSE
 LazyLoad: yes
 LazyData: true
@@ -26,7 +26,6 @@ Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.3
 Depends:
     R (>= 4.1),
-    Rcpp (>= 0.12.0),
 Suggests:
     covr,
     testthat (>= 2.1.0),
@@ -48,9 +47,7 @@ Imports:
     MortalityLaws (>= 1.7.0),
     Rdpack,
     rlang,
-    rstan (>= 2.18.1),
     tibble,
-    tidybayes,
     ungroup (>= 1.4.2),
     dplyr,
     stats,

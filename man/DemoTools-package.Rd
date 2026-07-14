@@ -6,7 +6,7 @@
 \alias{DemoTools-package}
 \title{DemoTools: Standardize, Evaluate, and Adjust Demographic Data}
 \description{
-A collection of classic demographic methods used to evaluate, adjust, and standardize demographic data.
+Modified version of DemoTools (no RC function and dependencies)
 }
 \seealso{
 Useful links:
