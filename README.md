@@ -27,13 +27,17 @@ If you detect a bug or have a suggestion please notify us using the [Issues](htt
 If you are getting started with `DemoTools` we recommend taking a look at the tutorial articles and the examples in the package documentation. 
 
 
-You can load the ```DemoTools``` package in R like so:
+You can install this workshop version of ```DemoTools``` in R like so:
 ```r
-# install.packages("remotes")
+if (!requireNamespace("remotes", quietly = TRUE)) {
+  install.packages("remotes")
+}
 
-# requires the development version of rstan, sorry!
-install.packages("rstan", repos = c("https://mc-stan.org/r-packages/", getOption("repos")))
-remotes::install_github("timriffe/DemoTools")
+remotes::install_github(
+  "IvanWilli/DemoTools",
+  ref = "workshop",
+  build_vignettes = FALSE
+)
 ```
 
 ## <i class="fa fa-pencil" aria-hidden="true"></i> Citation

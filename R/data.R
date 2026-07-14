@@ -415,7 +415,7 @@
 
 #' Parameters for considered migration profiles
 #'
-#' Roger-Castro estimated parameters using `mig_estimate_rc` for Pre Working Age and Working Age profiles of migration.
+#' Roger-Castro estimated parameters for Pre Working Age and Working Age profiles of migration.
 #' @docType data
 #' @format
 #'   A data frame with:
@@ -424,7 +424,7 @@
 #'     \item{sex}{Male and Female.}
 #'     \item{mig_sign}{Inmigration or Emigration.}
 #'     \item{param}{Parameters from Roger-Castro.}
-#'     \item{median}{median of posterior distribution using Monte Carlo Markov Chains in `mig_estimate_rc`.}
+#'     \item{median}{median estimate from the original model fit.}
 #'     }
 #' @source UN spreadsheet "UNPD_Migration Age Profiles.xlsx"
 "mig_un_params"

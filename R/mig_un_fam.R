@@ -104,7 +104,7 @@ mig_un_fam <- function(NM, family, Single = TRUE, OAnew = 100){
 ## lines(0:80,-a,col=2)
 ## lines(0:80,-b,col=3)
 ## lines(0:80,-c,t="s",col=4)
-## res <- mig_estimate_rc(0:120,as.numeric(a),
+## res <- legacy Rogers-Castro fit for 0:120 and as.numeric(a)
 ##                        pre_working_age = TRUE,
 ##                        working_age = TRUE,
 ##                        retirement = FALSE,
@@ -117,7 +117,7 @@ mig_un_fam <- function(NM, family, Single = TRUE, OAnew = 100){
 ##              c = pars[5])
 
 ## ages <- 0:120
-## mx_RC <- mig_calculate_rc(ages = ages, pars = pars)
+## mx_RC <- legacy Rogers-Castro calculation for ages and pars
 ## lines(0:80, -mx_RC, col = "black")
 ## sum(UN_flies %>% dplyr::filter(Type == "Female Labor Emigration", Sex == "Male") %>% pull(Prop))
 ## sum(-res[["fit_df"]]$median)
@@ -130,7 +130,7 @@ mig_un_fam <- function(NM, family, Single = TRUE, OAnew = 100){
 ##                       x = M[[X]]
 ##                       x_grad <- data.frame(mx = as.numeric(graduate(abs(x$Prop),x$Age,method = "sprague")),
 ##                                            Age = 0:max(x$Age))
-##                       res <- mig_estimate_rc(x_grad$Age, x_grad$mx,
+##                       res <- legacy Rogers-Castro fit for x_grad$Age and x_grad$mx
 ##                                              pre_working_age = TRUE,
 ##                                              working_age = TRUE,
 ##                                              retirement = FALSE,
@@ -157,7 +157,7 @@ mig_un_fam <- function(NM, family, Single = TRUE, OAnew = 100){
 ##                      out <- data.frame(Type = unique(x$Type),
 ##                                        Sex = unique(x$Sex),
 ##                                        Age = ages,
-##                                        Prop = mig_calculate_rc(ages, params))
+##                                        Prop = legacy Rogers-Castro calculation for ages and params)
 ##                      out$Prop <- ifelse(stringr::str_detect(out$Type,"Emigration"),-out$Prop,out$Prop)
 ##                      out
 ##                    }, M = UN_estimates) %>%
